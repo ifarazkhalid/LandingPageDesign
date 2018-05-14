@@ -1,0 +1,237 @@
+html  {
+
+   width: 100%;
+   height: 100%;
+   margin: 0px;
+   padding: 0px;
+   overflow-x: hidden;
+
+}
+
+body {
+  background: black;
+  /* overflow-x: hidden; */
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+    font-size: 15px;
+}
+
+.navbar #buynowbutton {
+  color: rgb(246, 193, 16) !important;
+}
+
+.navbar a {
+  font-family: 'Vidaloka', serif;
+  text-transform: uppercase;
+}
+
+.jumbotron {
+  margin-bottom: 0 !important;
+}
+
+.introduction {
+  color: #afbfd8 !important;
+  height: 100vh;
+  background-color: #272828 !important;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+}
+
+.introContainer {
+  padding-top: 100px;
+}
+
+.logo {
+    width:200px; /* you can use % */
+    height: auto;
+}
+
+.faithimage {
+  width: 400px;
+  height: auto;
+  margin-top: -20px;
+}
+
+.description {
+  font-family: 'Sorts Mill Goudy', serif  }
+
+#about {
+  background-color: #272828 !important;
+}
+
+.aboutPaulHeading {
+  color: #ffffff !important;
+  text-align: center;
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+.paulimage {
+  width: 250px;
+}
+
+.aboutpaulparagraph {
+  margin-top: 50px;
+  color: #ffffff !important;
+  text-align: center;
+  line-height: 2.0;
+  font-family: 'Sorts Mill Goudy', serif;
+
+}
+
+.buynowabout {
+  width: 450px !important;
+  color: black !important;
+  margin-top: 20px;
+}
+
+#cutline {
+  text-decoration: line-through;
+}
+
+.testimage {
+width: 175px;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
+.testimonials {
+  text-align: center;
+  font-family: 'Sorts Mill Goudy', serif;
+  line-height: 2;
+}
+
+.sign {
+  font-family: 'Homemade Apple', cursive;
+}
+
+#videodiv {
+  color: #ffffff;
+  background-color: #272828 !important;
+}
+
+.video {
+  border: 5px solid black;
+}
+
+
+/* button animation start */
+
+.buynow {
+  margin-top: 10px !important;
+  width: 275px !important;
+}
+
+.btn {
+    position: relative !important;
+    background-color: rgb(246, 193, 16) !important;
+    border: none;
+    font-size: 28px !important;
+    color: #000000;
+    /* margin-top: 10px; */
+    /* padding-top: 200px; */
+    /* margin-top: 5px; */
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn:after {
+    content: "";
+    background: #000000;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+/* button animation end */
+
+
+
+.headline {
+  font-family: Calibri, "Helvetica", san-serif;
+  line-height: 1.5em;
+  color: black;
+  font-size: 20px;
+  position: relative;
+  position: relative;
+}
+
+.headline:after {
+  content:' ';
+  position: absolute;
+  top:100%;
+  left:50%;
+  width: 20px;
+  border:2px solid #d0d0d0;
+  border-radius:4px;
+  box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+  transform:translateX(-50%);
+
+}
+
+
+
+
+/* RESPONSIVE SETTINGS FOR MOBILE PHONES */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body, html {
+      overflow-x: hidden;
+}
+
+.introduction {
+  height: 175vh !important;
+}
+
+.introduction .btn {
+  margin-bottom: 50px;
+}
+
+.introduction .faithimage {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.buynowabout {
+  width: 350px !important;
+  font-size: 20px !important
+}
+
+.paulimage {
+  margin-left: 50px;
+  margin-bottom: 25px;
+}
+
+#videodiv .video {
+  width: 300px !important;
+  height: auto;
+  border: none;
+}
+    /* .introduction {
+      overflow-x: hidden;
+    } */
+
+    /* .testimonials {
+      overflow-x: hidden;
+    } */
+}
